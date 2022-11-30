@@ -89,11 +89,13 @@ form {
   border: 2px solid #ff385c;
   padding: 10px;
   align-content: space-between;
+  flex: 1;
 }
 
 form label {
   font-weight: bold;  
   align-content: space-between;
+  flex: 1;
 }
 
 form select,
@@ -101,6 +103,11 @@ form input {
   margin-bottom: 20px;
   width: 180px;
   align-content: space-between;
+  flex: 1;
+}
+
+.form-row input {
+  flex: 1;
 }
 
 form button {
