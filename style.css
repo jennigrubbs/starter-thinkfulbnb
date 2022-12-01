@@ -17,6 +17,7 @@ h3 {
 }
 
 p {
+  font-size: 14px;
   line-height: 1.5em;
   margin: 0;
 }
@@ -27,11 +28,12 @@ section {
 
 section.alternate-background {
   background-color: #00a699;
-  color: #fff;
+  color: #fff;  
+  padding: 20px;
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -56,7 +58,6 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0px 20px;
   text-align: center;  
-  margin-bottom: 10px;
 }
 
 .logo {
@@ -76,16 +77,12 @@ header nav ul {
 
 header nav ul li {
   list-style-type: none;
-  display: inline;
-  padding: 0px 20px 0px 0px;  
-  margin-bottom: 10px;
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 0px 20px 0px 0px;  
-  margin-bottom: 10px;
 }
 
 header nav ul li a:hover {
@@ -97,7 +94,6 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  flex: 1;
 }
 
 form div {
@@ -107,16 +103,12 @@ form div {
 
 form label {
   font-weight: bold;  
-  justify-content: space-between;
-  flex: 1;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
-  align-content: space-between;
-  flex: 1;
+  width: 140px;
 }
 
 form button {
@@ -155,10 +147,6 @@ footer p {
     font-size: 42px;
   }
 
-  section {
-    padding: 0 10%;
-  }
-
   form select, form input {
     margin-bottom: 20px;
     width: 180px;
@@ -183,7 +171,18 @@ footer p {
     flex-direction: column;
   }
 
+  form button {
+    flex: 1;
+  }
+
   form select, form input {
     margin-bottom: 0px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 10px 10px 10px;
+    text-align: center;
   }
 }
