@@ -33,7 +33,12 @@ section.alternate-background {
 }
 
 main img {
-  width: 100%;
+  width: 96%;
+  margin: 20px 5%
+}
+
+ul{
+  margin: 5px 10%;
 }
 
 /* ---  Groups & Items --- */
@@ -80,6 +85,9 @@ header nav ul li {
 }
 
 header nav ul li a {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
   color: #fff;
   text-decoration: none;
   padding: 0px 20px 0px 0px;  
@@ -94,11 +102,7 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-}
-
-form div {
-  display: flex;
-  justify-content: space-between;
+  margin: auto;
 }
 
 form label {
@@ -108,7 +112,21 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 140px;
+  width: 60%;
+}
+
+.location,
+.arrive,
+.depart,
+.type{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input{
+  
+  justify-content: center;
 }
 
 form button {
@@ -147,42 +165,111 @@ footer p {
     font-size: 42px;
   }
 
-  form select, form input {
-    margin-bottom: 20px;
-    width: 140px;
-  }
-
-  header nav ul {
-    align-items: center;
+  nav {
+    padding-top: 30px;
   }
 
   .group {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  form {
+    flex-wrap: nowrap;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-  }
-  
-  form div {
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  form button {
-    flex: 1;
+  .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: baseline;
   }
 
   form select, form input {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    width: 100%;
   }
 
-  h2 {
-    font-size: 26px;
-    font-weight: 400;
-    margin: 0 10px 10px 10px;
-    text-align: center;
+  form button {
+    align-items: baseline;
+    width: 12%;
   }
+
+  .location,
+  .arrive,
+  .depart,
+  .type{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .desktop-about{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-size: 1.0rem;
+    margin: 1rem 1rem;
+  }
+
+  .desktop-about img  {
+    flex: 1;
+    width: 25%;
+    margin: 2% 1%;
+  }
+
+  .desktop-about p {
+    flex: 2;
+    
+  }
+
+  h2{
+    margin: 0 10px 10px auto;
+  } 
+
+  .wanna-host {
+    margin: 0 10px 10px;
+  }
+
+  img #ideas {
+    width: 50%;
+  }
+
+  .group-1,
+  .group-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4{
+    width: 50%;
+  }
+
+  .desktop-host{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .host-1{
+    width: 300%;
+  }
+
+  .desktop-host img{
+    width: 85%;
+    padding-left: 5%;
+    justify-content: flex-end;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+
 }
