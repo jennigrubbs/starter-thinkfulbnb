@@ -125,7 +125,6 @@ form input {
 }
 
 input{
-  
   justify-content: center;
 }
 
@@ -137,6 +136,7 @@ form button {
   padding: 15px;
   width: 100%;
 }
+
 
 /* -------  Footer ------- */
 
@@ -186,7 +186,7 @@ footer p {
 
   form select, form input {
     margin-bottom: 20px;
-    width: 100%;
+    width: auto;
   }
 
   form button {
