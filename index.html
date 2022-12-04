@@ -37,41 +37,45 @@
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
         <!-- Adding classes to form. -->
-        <form action="?" class="form">
-          <div class="location">
-            <label for="location" id="location">Location</label>
-            <input 
-            type="text"
-            id="location"
-            name="destination"
-            placeholder="Search destination"
-            />
-          </div>
-          <div class="arrive">
-            <label for="arrive" id="arrive">Arrive</label>
-            <input 
-            type="date"
-            id="arrive"
-            />
-          </div>
-          <div class="depart">
-            <label for="depart" id="depart">Depart</label>
-            <input type="date" id="depart">
-          </div>
-          <div class="type">
-            <label for="type" id="type">Type</label>
-            <select name="type" id="type" size="1">
-              <option value="apartment">Apartment</option>
-              <option value="barn">Barn</option>
-              <option value="castle">Castle</option>
-              <option value="houseboat">Houseboat</option>
-              <option value="tinyhouse">Tiny House</option>
-              <option value="yacht">Yacht</option>
-              <option value="yurt">Yurt</option>
-            </select>
-          </div>
-          <button type="search">Search</button>
-      </form>
+        <div class="group">
+          <div class="item">
+            <form>
+              <div class="item item-double">
+                <label for="location" id="location">Location</label>
+                <input 
+                type="text"
+                id="location"
+                name="destination"
+                placeholder="Search destination">
+              </div>
+              <div class="item item-double">
+                <label for="arrive" id="arrive">Arrive</label>
+                <input 
+                  type="date"
+                  id="arrive">
+              </div>
+              <div class="item item-double">
+                <label for="depart" id="depart">Depart</label>
+                <input 
+                  type="date" 
+                  id="depart">
+              </div>
+              <div class="item item-double">
+                <label for="type" id="type">Type</label>
+                <select name="type" id="type" size="1">
+                  <option value="apartment">Apartment</option>
+                  <option value="barn">Barn</option>
+                  <option value="castle">Castle</option>
+                  <option value="houseboat">Houseboat</option>
+                  <option value="tinyhouse">Tiny House</option>
+                  <option value="yacht">Yacht</option>
+                  <option value="yurt">Yurt</option>
+                </select>
+              </div>
+              <button type="search">Search</button>
+            </form>
+    			</div>
+        </div>
       </section>
 
       <!-- About -->
@@ -129,9 +133,9 @@
 
       <!-- Host -->
       <section id="host" class="alternate-background">
-        <h2>Want to Become a Thinkfulbnb Host?</h2>
         <div class="group">
           <div class="item">
+            <h2>Want to Become a Thinkfulbnb Host?</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie in est id efficitur. Sed hendrerit ut turpis quis dapibus. Nam sit amet iaculis lectus. Aliquam erat volutpat. Praesent rhoncus pellentesque eros in aliquet. Sed accumsan elit lacus, id ultrices libero rutrum vitae. 
             </p>

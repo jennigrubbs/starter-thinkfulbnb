@@ -100,36 +100,27 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  border: 2px solid #ff385c;
+  border: 2px solid #FF385C;
   padding: 10px;
-  margin: auto;
 }
 
 form label {
   font-weight: bold;  
 }
 
-form select,
-form input {
-  margin-bottom: 20px;
-  width: 60%;
-}
-
-.location,
-.arrive,
-.depart,
-.type{
+form div {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
-input{
-  justify-content: center;
+form select, 
+form input {
+  margin-bottom: 20px;
+  width: 140px;
 }
 
 form button {
-  background-color: #ff385c;
+  background-color: #FF385C;
   border: none;
   color: #fff;
   font-size: 24px;
@@ -170,38 +161,35 @@ footer p {
   }
 
   .group {
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
   }
 
-  .form{
+  form{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     align-content: baseline;
   }
 
-  form select, form input {
+  form div {
+    flex-direction: column;
+  }  
+
+  form select, 
+  form input {
     margin-bottom: 20px;
-    width: auto;
+    width: 180px;
   }
 
   form button {
-    align-items: baseline;
-    width: 12%;
+    flex: 1;
   }
 
-  .location,
-  .arrive,
-  .depart,
-  .type{
-    display: flex;
-    flex-direction: column;
+  form select, form input {
+    margin-bottom: 0px;
   }
-  
+
   .desktop-about{
     display: flex;
     flex-direction: row;
@@ -219,16 +207,11 @@ footer p {
 
   .desktop-about p {
     flex: 2;
-    
   }
 
   h2{
     margin: 0 10px 10px auto;
   } 
-
-  .wanna-host {
-    margin: 0 10px 10px;
-  }
 
   img #ideas {
     width: 50%;
@@ -239,9 +222,9 @@ footer p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    flex: 1;
   }
   
-
   .item-1,
   .item-2,
   .item-3,
@@ -249,27 +232,8 @@ footer p {
     width: 50%;
   }
 
-  .desktop-host{
-    display: flex;
-    flex-direction: row;
-    font-size: 1.1rem;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .host-1{
-    width: 300%;
-  }
-
-  .desktop-host img{
-    width: 85%;
-    padding-left: 5%;
-    justify-content: flex-end;
-  }
-
   footer p {
     margin: 0;
   }
-
 
 }
