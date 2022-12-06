@@ -100,34 +100,35 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  border: 2px solid #FF385C;
+  border: 2px solid #ff385c;
   padding: 10px;
 }
 
 form label {
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 form div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-form select, 
+form select,
 form input {
   margin-bottom: 20px;
-  width: 140px;
-}
+  width: 180px;
+ }
 
 form button {
-  background-color: #FF385C;
+  background-color: #ff385c;
   border: none;
   color: #fff;
   font-size: 24px;
   padding: 15px;
   width: 100%;
 }
-
 
 /* -------  Footer ------- */
 
@@ -165,29 +166,16 @@ footer p {
     align-items: center;
   }
 
-  form{
+  form {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: baseline;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   form div {
     flex-direction: column;
-  }  
-
-  form select, 
-  form input {
-    margin-bottom: 20px;
-    width: 180px;
-  }
-
-  form button {
-    flex: 1;
-  }
-
-  form select, form input {
-    margin-bottom: 0px;
+    flex-wrap: wrap;
   }
 
   .desktop-about{

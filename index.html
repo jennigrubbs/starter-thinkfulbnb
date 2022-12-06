@@ -41,40 +41,47 @@
           <div class="item">
             <form>
               <div class="item item-double">
-                <label for="location" id="location">Location</label>
-                <input 
-                type="text"
-                id="location"
-                name="destination"
-                placeholder="Search destination">
+                <label for="location">Location</label>
+                <input
+                  id="location"
+                  type="text"
+                  name="location"
+                  placeholder="Search destination"
+                />
               </div>
               <div class="item item-double">
-                <label for="arrive" id="arrive">Arrive</label>
-                <input 
+                <label for="arrival">Arrive</label>
+                <input
+                  id="arrival"
                   type="date"
-                  id="arrive">
+                  name="arrival-date"
+                />
               </div>
               <div class="item item-double">
-                <label for="depart" id="depart">Depart</label>
-                <input 
-                  type="date" 
-                  id="depart">
+                <label for="departing">Depart</label>
+                <input
+                  id="departing"
+                  type="date"
+                  name="depart-date"
+                />
               </div>
               <div class="item item-double">
-                <label for="type" id="type">Type</label>
-                <select name="type" id="type" size="1">
+                <label for="type">Type</label>
+                <select id="type" name="type" size="1">
                   <option value="apartment">Apartment</option>
                   <option value="barn">Barn</option>
                   <option value="castle">Castle</option>
-                  <option value="houseboat">Houseboat</option>
-                  <option value="tinyhouse">Tiny House</option>
+                  <option value="houseboast">Houseboat</option>
+                  <option value="tiny-house">Tiny House</option>
                   <option value="yacht">Yacht</option>
                   <option value="yurt">Yurt</option>
                 </select>
               </div>
-              <button type="search">Search</button>
+              <div class="item item-double">
+                <button type="submit">Search</button>
+              </div>
             </form>
-    			</div>
+          </div>
         </div>
       </section>
 
